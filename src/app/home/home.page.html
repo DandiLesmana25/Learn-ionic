@@ -1,0 +1,67 @@
+<!-- <ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Sample Consume API
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <div id="container">
+        <ion-card>
+            <ion-card-header>
+                <ion-card-title>Consume API GET</ion-card-title>
+                <ion-card-subtitle>reqres.in</ion-card-subtitle>
+            </ion-card-header>
+
+
+            <ion-card-content>
+                <ion-list *ngFor="let key of DataUser">
+
+                    <ion-item>
+                        <ion-thumbnail slot="start">
+                            <img alt="Silhouette of mountains" src="{{ key.avatar }}" />
+                        </ion-thumbnail>
+                        <ion-label>{{ key.first_name }} {{ key.last_name }} <br> {{ key.email }}</ion-label>
+                    </ion-item>
+
+                </ion-list>
+            </ion-card-content>
+
+        </ion-card>
+
+        <!-- </ion-card-content> -->
+
+<!-- </div> -->
+<!-- </ion-content> -->-->
+
+
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Sample Consume API
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <div id="container">
+
+        <ion-card-content style="text-align: left;">
+
+            <ion-grid>
+                <ion-row *ngFor="let key of users">
+                    <ion-col>
+                        <span style="color: black;">{{ key.first_name + '&nbsp;' + key.last_name }}</span>
+                        <br> {{ key.email }}
+                        <hr style="height:1px;color:gray;background-color:gray">
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+        </ion-card-content>
+
+    </div>
+</ion-content>
